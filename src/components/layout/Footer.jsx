@@ -1,5 +1,6 @@
 import { ShieldCheck } from 'lucide-react';
 import logo from '../../assets/logo-with-text-dark-background.svg';
+import { Facebook, Twitter, Linkedin, Github, Mail, Phone, MapPin } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -25,11 +26,14 @@ export const Footer = () => {
             </p>
             <div className="flex gap-4">
               {/* Social placeholders */}
-              {[1, 2, 3, 4].map(i => (
-                <div key={i} className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-midnight/40 hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer">
-                  <div className="w-5 h-5 bg-current rounded-sm opacity-20" />
-                </div>
-              ))}
+              {[<Twitter size={20} />, <Linkedin size={20} />, <Github size={20} />, <Facebook size={20} />].map((element, index) => (
+                    <div
+                      key={index}
+                      className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-midnight/40 hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer"
+                    >
+                      {element}
+                    </div>
+            ))}
             </div>
           </div>
           
