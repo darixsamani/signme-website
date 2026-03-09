@@ -52,7 +52,7 @@ Follow these steps to install and run the project locally.
 ## 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/signme-website.git
+git clone https://github.com/darixsamani/signme-website.git
 cd signme-website
 ```
 
